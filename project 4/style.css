@@ -1,0 +1,334 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    margin:0;
+    padding: 0;
+}
+.container{
+    background-image:url("developer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100vh;
+}
+.content{
+    color:white;
+    margin:0 20%;
+   flex-basis: 100%;
+flex-shrink: 0;
+font-family: roboto;
+}
+    
+.info {
+    margin-top: 30px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap:8px;
+    line-height: normal;
+    font-family: "lato";
+}
+.info h2{
+    font-size:69px;
+    padding-top: 24px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+}
+.info p{
+    padding-top: 50px;
+    word-spacing: 0.2em;
+    letter-spacing: 0.09em;
+}
+.content h1{
+    padding-top: 20px;
+    font-size:67px;
+    word-spacing: 0.2em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    
+}
+.work{
+    /* flex-basis: 100%; */
+   padding-top: 50%;
+    color:white;
+    position: relative;
+}
+.w_2{
+    font-size: 35px;
+   position: absolute;
+   top:0;
+    background: black;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    padding: 7% 13% 7% 13%;
+    gap:20px;
+    font-size: 60px;
+    font-weight: 400;
+    word-spacing: 0.1em;
+    font-family:roboto;
+    font-style: normal;
+}
+.w_2 p{
+   padding-top: 35px;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+}
+.w_2 h2{
+   font-size:100px ;
+}
+.container_2{
+    background-color: white;
+    width: 100%;
+    height:100vh;
+    margin-top: 20%;
+    position: relative;
+}
+.cards{
+    width:100%;
+    position: absolute;
+    top:10%;
+    display: flex;
+    flex-direction: row;
+}
+.web_card{
+    width: 300px;
+    height:492px;
+    flex-shrink: 0;
+  border-radius:10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  margin-left: 15% ;
+  transition: all ease 0.4s;
+}
+.web_card img{
+    width:300px;
+    height:200px;
+}
+.web_card p{
+    font-size: 13px;
+    overflow: hidden;
+    padding: 30px 10px 0px 20px;
+    text-align:left;
+    line-height: normal;
+    letter-spacing:0.02em ;
+}
+.web_card h3{
+    padding:20px 0 0 20px;
+}
+.para p{
+    font-size: 13px;
+    overflow: hidden;
+    padding: 20px 10px 30px 20px;
+    text-align:left;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    font-family: roboto ;
+}
+.app_card{
+    width: 300px;
+    height:492px;
+    flex-shrink: 0;
+  border-radius:10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  margin-left: 5%;
+  transition: all ease 0.4s;
+}
+.app_card img{
+    width:300px;
+    height:200px;
+}
+.app_card h3{
+    padding:20px 0 0 20px;
+}
+.app_card p{
+    font-size: 13px;
+    overflow: hidden;
+    padding: 30px 10px 0px 20px;
+    text-align:left;
+    line-height: normal;
+    letter-spacing:0.02em ;
+}
+.lorem p{
+    font-size: 13px;
+    overflow: hidden;
+    padding: 20px 10px 40px 20px;
+    text-align:left;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    font-family: roboto ;
+}
+.ui_card{
+    width: 300px;
+    height:492px;
+    flex-shrink: 0;
+  border-radius:10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  margin: 0 10% 0 5%;
+  transition: all ease 0.4s;
+}
+.ui_card img{
+    width:300px;
+    height:200px;
+}
+.ui_card h3{
+    padding:20px 0 0 20px;
+}
+.ui_card p{
+    font-size: 13px;
+    overflow: hidden;
+    padding: 30px 10px 0px 20px;
+    text-align:left;
+    line-height: normal;
+    letter-spacing:0.02em ;
+}
+.pass p{
+    font-size: 13px;
+    overflow: hidden;
+    padding: 20px 10px 40px 20px;
+    text-align:left;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    font-weight: 300;
+    font-family: roboto ;
+}
+.web_card:hover{
+    cursor: pointer; 
+    background-color: rgba(0,145,155,0.35) ;
+    scale:1.1;
+   }
+ .app_card:hover{
+    cursor: pointer; 
+    background-color: rgba(0,145,155,0.35) ;
+    scale:1.1;
+   }
+.ui_card:hover{
+    cursor: pointer; 
+    background-color: rgba(0,145,155,0.35) ;
+    scale:1.1;
+   }
+   .details{
+    width:100%;
+    height:400px;
+   border-collapse: collapse;
+   padding: 0;
+   }
+   .details td{
+    width:50%;
+    border:0px solid black;
+   }
+  .contact{
+    width:50%;
+    /* background-color:#515603; */
+   }
+   .contact h2{
+    font-size: 60px;
+    font-family: Roboto;
+    font-weight: 600;
+    color: white;
+    padding: 50px 30px 0 80px;
+   }
+   .contact p{
+     font-size:19px ;
+     font-weight:300;
+     line-height: normal;
+     word-spacing: 0.3em;
+     letter-spacing: 0.09em;
+     color: white;
+     padding: 20px 80px 60px 80px;
+   }
+   .about{
+    background: brown;
+
+   }
+   .about h2{
+    font-size: 60px;
+    font-family: Roboto;
+    font-weight: 600;
+    color: white;
+    padding: 50px 30px 0 80px;
+   }
+.about p{
+    font-size:19px ;
+    font-weight:300;
+    line-height: normal;
+    word-spacing: 0.3em;
+    letter-spacing: 0.09em;
+    color: white;
+    padding: 20px 80px 10px 80px;
+  }
+  .lorem_1{
+    font-size:19px ;
+    font-weight:300;
+    line-height: normal;
+    word-spacing: 0.3em;
+    letter-spacing: 0.09em;
+    color: white;
+    padding: 20px 80px 60px 80px;
+  }
+ .details th{
+    background-color: black;
+    color: white;
+    padding-top:30px;
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-style: normal;
+    font-family: Roboto;
+    width:100%;
+  }
+  @media  (max-width:770px) {
+    .container{
+       background-position: center;
+       width:1100px
+    }
+    .info{
+        font-size: 32px;
+    }
+    .content h1{
+        font-size: 49px;
+    }
+    .w_2{
+        align-items: center;
+    }
+    .w_2 p{
+        padding: 3px 5px 5px 30px;
+        font-size: 32px;
+    }
+    .w_2 h2 {
+        font-size:40px;
+        padding-top: 0;
+    }
+    .container_2{
+        margin: 60% 0 0 0;
+        width:1100px;
+    }
+    .cards{
+        width:800px;
+    }
+    .web_card{
+        margin-left:4%;
+    }
+    .app_card{
+        margin:0 0 0 3%;
+    }
+    .ui_card{
+        margin-left: 3%;
+    }
+    .details table{
+        margin-top: opx;
+        font-size:32px;
+        width:1100px;
+    }
+  }
